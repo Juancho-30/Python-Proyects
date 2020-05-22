@@ -22,7 +22,7 @@ while True:
 
       delta_frame = cv2.absdiff(first_frame, gray) #absolute diference between 2 frames, diference between intensities of corresponding pixels
 
-      thresh_frame = cv2.threshold(delta_frame, 30, 255, cv2.THRESH_BINARY)[1] #Difference, 30 for white, black pixel for less than 30
+      thresh_frame = cv2.threshold(delta_frame, 30, 255, cv2.THRESH_BINARY)[1] #Difference, 255 for white, black pixel for less than 30
       thresh_frame = cv2.dilate(thresh_frame, None, iterations = 3) #Smooth the image, bigger iterations, smoother
 
       (cnts,_) = cv2.findContours(thresh_frame.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
