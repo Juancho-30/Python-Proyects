@@ -29,13 +29,12 @@ while True:
                                     #Ccopy of the frame, Retrieve external (Draw external contours of the object, Aproximation method)
 
       for contour in cnts:
-            if cv2.contourArea(contour) < 10000:
+            if cv2.contourArea(contour) < 10000: #if are is less than 10000 pixels continue
                   continue
             status = 1
-            
-
             (x, y, w, h) = cv2.boundingRect(contour)
-            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255,0), 3)
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255,0), 3) #Draw rectangle in actual frame
+                              #(x,y) upper left corner, (x+w, y+h) down right corner, (0, 255,0) color, 3 width
 
       status_list.append(status)
 
