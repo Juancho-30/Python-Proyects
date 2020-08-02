@@ -42,10 +42,9 @@ Add data to table	@app.route("/")
 	      return render_template("success.html")
 
 
-```python
-
-
-#To create a virtual environment need to use a clean installation of python, you can install there all the libraries that don-t want to install in the global 
+Create a virtual environment
+#To create a virtual environment need to use a clean installation of python, 
+you can install there all the libraries that don-t want to install in the global 
 
 Pip install virtualenv	To install virtual environment
 
