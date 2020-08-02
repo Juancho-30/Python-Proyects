@@ -5,7 +5,7 @@ from sqlalchemy.sql import func
 
 app=Flask(__name__)
 #Set the value of dict key for the app knows where to look for database
-#app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:Azul.1995@localhost/height_collector1'
+#app.config['SQLALCHEMY_DATABASE_URI']='postgresql://user:pass@localhost/height_collector1'
 app.config['SQLALCHEMY_DATABASE_URI']='postgres://hcinkdjcmyfolh:753e3bd63badad1f9af4a18a445ef7c442f23e009acb67cc503161403a77789c@ec2-54-161-208-31.compute-1.amazonaws.com:5432/din8vup4hlv1?sslmode=require'
 #?sslmode=require at the end for manipulating manually in computer DB
 db=SQLAlchemy(app) #Specify the class object or blueprint
