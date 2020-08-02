@@ -7,7 +7,7 @@ POSTGRESQL with SQL ALCHEMY
 from flask_sqlalchemy import SQLAlchemy
 app=Flask(__name__)
 #Set the value of dict key for the app knows where to look for database
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:Azul.1995@localhost/height_collector1' 
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://youruser:yourpass@localhost/height_collector1' 
 db=SQLAlchemy(app) #Specify the class object or blueprint
 class Data(db.Model): #Model class of sqlalchemy object
    __tablename__="data"
