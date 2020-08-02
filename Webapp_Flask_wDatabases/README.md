@@ -40,6 +40,7 @@ Add data to table	@app.route("/")
 	      db.session.add(data) #Add rows to table
 	      db.session.commit()
 	      return render_template("success.html")
+```
 
 
 Create a virtual environment
