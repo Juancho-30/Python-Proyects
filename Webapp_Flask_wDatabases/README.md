@@ -18,15 +18,19 @@ class Data(db.Model): #Model class of sqlalchemy object
       self.email_=email_
       self.height_=height_
 
-
+```
+```shell
 Then run on virtual env: 
-Python
-From app import db
-Db.create_all() To create the Table
-Or you can use in python method (Look for it)
+	python
+	From app import db
+	Db.create_all() To create the Table
+	#Or you can use in python method (Look for it)
+```
 
 
-Add data to table	@app.route("/")
+Add data to table	
+```python	
+	@app.route("/")
 	def index():
 	   return render_template("index.html")
 	@app.route("/success", methods=['POST']) #implicitly create GET method
@@ -44,9 +48,11 @@ Add data to table	@app.route("/")
 
 
 Create a virtual environment
+
 #To create a virtual environment need to use a clean installation of python, 
 you can install there all the libraries that don-t want to install in the global 
 
+```shell
 Pip install virtualenv	To install virtual environment
 
 Go to the directory and create a new folder:
@@ -57,3 +63,4 @@ Ejemplo: python -m venv virtual
 Trigger python: virtual\Scripts\python
 Virtual\Scripts\activate To use VENV
 
+```
